@@ -1,0 +1,31 @@
+{
+  "name": "taste-skill",
+  "version": "1.0.0",
+  "description": "Anti-slop design skills for Hermes Agent and AI coding tools.",
+  "author": "TasteSkill",
+  "license": "MIT",
+  "bin": {
+    "taste-skill": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "templates/",
+    "README.md"
+  ],
+  "keywords": [
+    "hermes",
+    "hermes-agent",
+    "skills",
+    "design",
+    "ui",
+    "anti-slop",
+    "taste",
+    "frontend",
+    "ai-coding"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taste-skill/taste-skill"
+  }
+}

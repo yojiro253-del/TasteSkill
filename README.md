@@ -20,6 +20,22 @@ Seven skill variants that enforce design quality in AI-generated UI code. Each t
 
 Each skill is a `SKILL.md` file that gets loaded into your AI agent's context. The file contains design rules, anti-patterns to avoid, and a verification checklist the agent runs before presenting output. No dependencies, no build step — just markdown that makes AI output better.
 
+## Install
+
+```bash
+npm install -g ui-ux-pro-max-cli
+uipro init --ai claude
+```
+
+For other assistants:
+
+```bash
+uipro init --ai cursor
+uipro init --ai windsurf
+uipro init --ai copilot
+uipro init --ai all
+```
+
 ## Website
 
 [tasteskill.qzz.io](http://tasteskill.qzz.io)
@@ -27,9 +43,3 @@ Each skill is a `SKILL.md` file that gets loaded into your AI agent's context. T
 ## License
 
 MIT
-READMEEOF
-
-## Install
-
-```bash
-npx taste-skill init

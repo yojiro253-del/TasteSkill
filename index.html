@@ -199,6 +199,20 @@ footer a:hover{color:var(--accent-hover)}
   .ba-after{clip-path:none;position:relative}
   .ba-before{position:relative}
 }
+  @media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-headline .ch, .hero-sub .wd { opacity: 1 !important; transform: none !important; }
+  .hero-stats { opacity: 1 !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .dp-floater { animation: none !important; opacity: 0 !important; }
+  .hero-scroll-line { animation: none !important; }
+}
+
+}
 </style>
 </head>
 <body>

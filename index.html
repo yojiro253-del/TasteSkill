@@ -453,7 +453,17 @@ footer a:hover{color:var(--accent-hover)}
 <script>
 (function() {
   // ══════════ HERO ANIMATION ══════════
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (prefersReduced) {
+  document.querySelectorAll('.ch, .wd').forEach(el => { el.style.opacity = 1; el.style.transform = 'none'; });
+  document.querySelector('.hero-stats').style.opacity = 1;
+} else {
   const tl = gsap.timeline({ delay: 0.2 });
+  tl.to('.hero-headline .ch', {
+    y: 0, opacity: 1, rotation: 0,
+    duration: 0.7, stagger: 0.04, ease: 'power3.out'
+  })
+
   tl.to('.hero-headline .ch', {
     y: 0, opacity: 1, rotation: 0,
     duration: 0.7, stagger: 0.04, ease: 'power3.out'
